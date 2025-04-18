@@ -44,7 +44,7 @@ export default function ProjectsPage() {
           <div>
             <ScopeAnimation>
               <Title>Metin2</Title>
-              <Title type="subtitle">Javascript</Title>
+              <Title type="subtitle">Javascript (2021-2023)</Title>
               <ParagraphsContainer>
                 <DiscreteHeading>TL;DR</DiscreteHeading>
                 <Paragraph>
@@ -155,7 +155,7 @@ export default function ProjectsPage() {
           <div>
             <ScopeAnimation>
               <Title>Metin2</Title>
-              <Title type="subtitle">Rust</Title>
+              <Title type="subtitle">Rust (2024)</Title>
               <ParagraphsContainer>
                 <DiscreteHeading>TL;DR</DiscreteHeading>
                 <Paragraph>
@@ -277,7 +277,7 @@ export default function ProjectsPage() {
           <div>
             <ScopeAnimation>
               <Title>Rememora</Title>
-              <Title type="subtitle">Memento mori</Title>
+              <Title type="subtitle">Memento mori (current)</Title>
               <ParagraphsContainer>
                 <DiscreteHeading>TL;DR</DiscreteHeading>
                 <Paragraph>
@@ -301,93 +301,6 @@ export default function ProjectsPage() {
           </div>
         </FlexRow>
       </Section>
-      {/* <Section sector={1} stage={{
-				cameraPosition: new Vector3(-20.682863524309127, -55.18117379344369, 99.92869441631366),
-				orbitTarget: new Vector3(4.4004047117881395, 18.450501591932124, -33.87926015725064),
-				isLocked: false,
-				engineSpeed: .1,
-				splitFactor: 0,
-				shakeStrength: 0,
-				light: 1,
-				opacity: .35
-			}}>
-				<FlexRow>
-					<div>
-						<ScopeAnimation>
-							<Title>
-								Configurateur
-							</Title>
-							<Title type='subtitle'>
-								de tiroirs
-							</Title>
-							<ParagraphsContainer>
-								<DiscreteHeading>TL;DR</DiscreteHeading>
-								<Paragraph>
-									Afin de remplacer un processus obsolète de commande tiroirs sur-mesure, une application web a vu le jour. Ce nouvel outil, plus moderne et plus efficace, a augmenté les ventes de 150% !
-								</Paragraph>
-							</ParagraphsContainer>
-							<ParagraphsContainer>
-								<DiscreteHeading>Technologies & fonctionnalités</DiscreteHeading>
-								<NativeList>
-									<NativeListEntry>Affichage 3D en temps réel du tiroir</NativeListEntry>
-									<NativeListEntry>Animations fluides avec Anime.js</NativeListEntry>
-									<NativeListEntry>Gestion de panier virtuel</NativeListEntry>
-									<NativeListEntry>Génération de bon de commande en PDF</NativeListEntry>
-									<NativeListEntry>Envoi d'emails grâce à Selligent</NativeListEntry>
-								</NativeList>
-							</ParagraphsContainer>
-						</ScopeAnimation>
-					</div>
-					<div>
-						<Parallax>
-							<Video source='videos/astucio.mp4' />
-						</Parallax>
-					</div>
-				</FlexRow>				
-			</Section>
-			<Section sector={2} stage={{
-				cameraPosition: new Vector3(-23.577257683055677, -103.14376051549235, 100.35711469758304),
-				orbitTarget: new Vector3(22.649089171384773, 32.48059195364129, -9.44915022333991),
-				isLocked: false,
-				engineSpeed: .1,
-				splitFactor: 0,
-				shakeStrength: 0,
-				light: 1,
-				opacity: .35
-			}}>
-				<FlexRow>
-					<div>
-						<ScopeAnimation>
-							<Title>
-								Guide de choix
-							</Title>
-							<Title type='subtitle'>
-								gants de travail
-							</Title>
-							<ParagraphsContainer>
-								<DiscreteHeading>TL;DR</DiscreteHeading>
-								<Paragraph>
-									Outil permettant d'améliorer l'expérience des utilisateurs en guidant le choix à travers divers critères. Ces outils sont très utiles lorsque le nombre de références disponibles est très important.
-								</Paragraph>
-							</ParagraphsContainer>
-							<ParagraphsContainer>
-								<DiscreteHeading>Technologies & fonctionnalités</DiscreteHeading>
-								<NativeList>
-									<NativeListEntry>Arbre de choix dynamique</NativeListEntry>
-									<NativeListEntry>Animations fluides avec Anime.js</NativeListEntry>
-									<NativeListEntry>Sélection de produit par métiers ou secteur d'activité</NativeListEntry>
-									<NativeListEntry>Sélection de produit par matière, norme ou épaisseur</NativeListEntry>
-								</NativeList>
-							</ParagraphsContainer>
-						</ScopeAnimation>
-					</div>
-					<div>
-						<Parallax>
-							<Video source='videos/gloves.mp4' />
-						</Parallax>
-					</div>
-				</FlexRow>				
-			</Section> */}
     </>
   );
 }
