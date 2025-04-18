@@ -20,6 +20,9 @@ dependencies:
   eslint-config-next:
     specifier: 13.2.3
     version: 13.2.3(eslint@8.35.0)(typescript@4.9.5)
+  hls.js:
+    specifier: ^1.6.2
+    version: 1.6.2
   locomotive-scroll:
     specifier: 4.1.4
     version: 4.1.4
@@ -1340,6 +1343,10 @@ packages:
     engines: {node: '>= 0.4.0'}
     dependencies:
       function-bind: 1.1.1
+    dev: false
+
+  /hls.js@1.6.2:
+    resolution: {integrity: sha512-rx+pETSCJEDThm/JCm8CuadcAC410cVjb1XVXFNDKFuylaayHk1+tFxhkjvnMDAfqsJHxZXDAJ3Uc2d5xQyWlQ==}
     dev: false
 
   /ignore@5.2.4:
