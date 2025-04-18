@@ -87,7 +87,6 @@ export default function ProjectsPage() {
             <Video source="videos/hls/m2js.m3u8" hls={true} />
           </div>
         </FlexRow>
-
         <Gallery
           content={[
             "gallery/m2js/1.png",
@@ -201,6 +200,57 @@ export default function ProjectsPage() {
             <Video source="videos/hls/m2rs-environment.m3u8" hls={true} />
           </div>
         </FlexRow>
+        <Gallery
+          content={[
+            "gallery/m2rs/1_.m3u8",
+            "gallery/m2rs/2_.m3u8",
+            "gallery/m2rs/3_.m3u8",
+            "gallery/m2rs/4_.m3u8",
+            "gallery/m2rs/5_.m3u8",
+            "gallery/m2rs/6_.m3u8",
+            "gallery/m2rs/7.png",
+            "gallery/m2rs/8.png",
+            "gallery/m2rs/9.png",
+            "gallery/m2rs/10.png",
+            "gallery/m2rs/11.png",
+            "gallery/m2rs/12.png",
+            "gallery/m2rs/13.png",
+            "gallery/m2rs/14.png",
+            "gallery/m2rs/15.png",
+            "gallery/m2rs/16_.m3u8",
+            "gallery/m2rs/17.png",
+            "gallery/m2rs/18_.m3u8",
+            "gallery/m2rs/19_.m3u8",
+            "gallery/m2rs/20_.m3u8",
+            "gallery/m2rs/21.png",
+            "gallery/m2rs/22.png",
+            "gallery/m2rs/23.png",
+            "gallery/m2rs/24_.m3u8",
+            "gallery/m2rs/25.png",
+            "gallery/m2rs/26.png",
+            "gallery/m2rs/27.png",
+            "gallery/m2rs/28.png",
+            "gallery/m2rs/29_.m3u8",
+            "gallery/m2rs/30_.m3u8",
+            "gallery/m2rs/31_.m3u8",
+            "gallery/m2rs/32_.m3u8",
+            "gallery/m2rs/33.png",
+            "gallery/m2rs/34.png",
+            "gallery/m2rs/35_.m3u8",
+            "gallery/m2rs/36_.m3u8",
+            "gallery/m2rs/37.png",
+            "gallery/m2rs/38.png",
+            "gallery/m2rs/39_.m3u8",
+            "gallery/m2rs/40_.m3u8",
+            "gallery/m2rs/41_.m3u8",
+            "gallery/m2rs/42_.m3u8",
+            "gallery/m2rs/43_.m3u8",
+            "gallery/m2rs/44_.m3u8",
+            "gallery/m2rs/45_.m3u8",
+            "gallery/m2rs/46_.m3u8",
+            "gallery/m2rs/47.png",
+          ]}
+        />
       </Section>
       <Section
         sector={2}

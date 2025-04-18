@@ -6,7 +6,7 @@ import {
   useState,
 } from "react";
 import scss from "./video.module.scss";
-import HLS from "hls.js";
+import HLS, { Events } from "hls.js";
 
 export interface VideoProps {
   source: string;
@@ -39,6 +39,7 @@ export function HlsVideo(
       playerClassName?: string;
       playerStyle?: CSSProperties;
       controls?: boolean;
+      onLoadStart?: () => void;
     }
   >
 ) {
@@ -54,8 +55,12 @@ export function HlsVideo(
       });
       hls.loadSource(props.source);
       hls.attachMedia(video);
+      hls.on(Events.MEDIA_ATTACHED, () => {
+        if (props.onLoadStart) props.onLoadStart();
+      });
     } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
       video.src = props.source;
+      if (props.onLoadStart) props.onLoadStart();
     }
   }, [ref]);
   return (
