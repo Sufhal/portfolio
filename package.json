@@ -7,7 +7,8 @@
     "build": "next build",
     "export": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check": "tsc --noEmit"
   },
   "dependencies": {
     "@types/node": "18.14.6",
