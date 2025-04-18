@@ -1,0 +1,17 @@
+.section {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: clamp(10rem, 20vw, 15rem) 0;
+
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
+
+.unsetMinHeight {
+	min-height: initial;
+}

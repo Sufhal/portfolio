@@ -1,0 +1,13 @@
+.player {
+
+	border-radius: var(--radius-norm);
+	overflow: hidden;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+
+	video {
+		width: 100%;
+		object-fit: cover;
+	}
+}

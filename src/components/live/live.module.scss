@@ -1,0 +1,50 @@
+
+.live {
+	--size: .75rem;
+	--waveOpacity: .35;
+	height: var(--size);
+	width: var(--size);
+	border-radius: 50%;
+	background-color: var(--color-positive);
+	position: relative;
+	margin: calc(var(--size) / 1.5);
+
+	&::after,
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		background: radial-gradient(circle, rgba(38,245,46,0.23715423669467783) 0%, rgba(38,245,46,1) 100%);
+		border-radius: inherit;
+	}
+
+	&::after {
+		animation: Wave infinite 3s 0s;
+	}
+
+	&::before {
+		animation: Wave infinite 3s .75s;
+	}
+}
+
+@keyframes Wave {
+	0% {
+		transform: scale(1);
+		opacity: var(--waveOpacity);
+	}
+	20% {
+		opacity: var(--waveOpacity);
+	}
+	80% {
+		transform: scale(3);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(3);
+		opacity: 0;
+	}
+}

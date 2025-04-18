@@ -1,0 +1,15 @@
+.up, .down {
+	cursor: pointer;
+}
+
+.down {
+	svg {
+		transform: translateY(-.1rem) rotate(135deg);
+	}
+}
+
+.up {
+	svg {
+		transform: translateY(.1rem) rotate(-45deg);
+	}
+}

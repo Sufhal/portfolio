@@ -1,0 +1,35 @@
+.flexRow {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 1rem;
+
+	& > * {
+		flex-shrink: 1;
+		flex-basis: 50%;
+	}
+}
+
+.layoutTransition {
+
+	transition: .6s cubic-bezier(0.65, 0, 0.35, 1);
+
+	&.fadeOut {
+		opacity: 0;
+	}
+	
+	&.fadeIn {
+		opacity: 1;
+	}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	
+	.flexRow {
+		flex-direction: column;
+		row-gap: 2rem;
+	}
+}

@@ -1,0 +1,16 @@
+.container {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 1.5rem;
+
+	position: fixed;
+	bottom: 0;
+
+	svg {
+		color: var(--text-color-100);
+		scale: 1.2;
+	}
+
+}

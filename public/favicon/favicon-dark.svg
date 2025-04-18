@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="173.04" height="173.04"><svg id="SvgjsSvg1001" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173.04 173.04">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="SvgjsG1000" data-name="Calque 1">
+    <path class="cls-1" d="M149.86,63.34C134.67,37.03,112.82,15.19,86.52,0,60.21,15.19,38.37,37.03,23.18,63.34,8,89.64,0,119.48,0,149.86c26.31,15.19,56.14,23.18,86.52,23.18s60.21-8,86.52-23.18c0-30.37-8-60.21-23.18-86.52Zm-63.34,83.36c-25.8,0-46.71-20.91-46.71-46.71s20.91-46.71,46.71-46.71,46.71,20.91,46.71,46.71-20.91,46.71-46.71,46.71Z"></path>
+  </g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+</style></svg>

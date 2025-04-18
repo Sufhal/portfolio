@@ -1,0 +1,62 @@
+.logo {
+
+	position: relative;
+	// transform: rotate(90deg);
+	--size: 4em;
+
+	.stator {
+		height: var(--size);
+ 		width: calc(var(--size) * 1.33);
+
+		path {
+			fill: rgba(255, 255, 255, 0);
+  			transition: fill 0.4s;
+		}
+
+		circle {
+			fill: rgba(255, 255, 255, 0);
+  			transition: fill 0.4s;
+		}
+	}
+	
+	.rotor {
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		left: calc(50% - (var(--size) / 2));
+		transform-origin: 50% -2px;
+		height: var(--size);
+		width: var(--size);
+
+		path {
+			fill: white;
+		}
+	}
+
+
+	&.running {
+
+		.stator {
+
+			path {
+				fill: rgba(255, 255, 255, 0.15);
+  				transition: fill 0.4s;
+			}
+
+			circle {
+				fill: rgba(255, 255, 255, 1);
+				transition: fill 0.4s;
+			}
+		}
+
+	}
+
+}
+
+footer {
+	.logo {
+		.stator, .rotor {
+			opacity: .2;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.headerNode {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgb(22, 22, 22);
+	background: linear-gradient(0deg, rgba(22,22,22,0) 0%, rgba(22,22,22,1) 100%);
+}
+
+.headerContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+	@media screen and (max-width: 1000px) {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}

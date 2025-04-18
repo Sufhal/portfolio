@@ -1,0 +1,55 @@
+.list {
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-height: calc(100% - (var(--card-inner-padding-vertical) * 2));
+	gap: 1rem;
+
+	&.horizontal {
+		flex-direction: row;
+		max-height: unset;
+		column-gap: 5rem;
+	}
+
+	.entry {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 1rem;
+	}
+}
+
+.nativeList {
+	list-style-type: disc;
+	margin-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: .75rem;
+}
+
+@media screen and (max-width: 1000px) {
+	
+	.list {
+		max-height: calc(115% - var(--card-inner-padding-vertical) * 2)
+	}
+}
+
+@media screen and (max-width: 650px) {
+	
+	.list {
+
+		&.horizontal {
+			flex-direction: column;
+		}
+	
+	}
+}
+
+
+@media screen and (max-width: 450px) {
+	
+	.list {
+		max-height: unset;
+	}
+}
