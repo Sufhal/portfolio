@@ -14,6 +14,7 @@ import ListEntry from "../list/ListEntry";
 import NativeList from "../list/NativeList";
 import NativeListEntry from "../list/NativeListEntry";
 import videoClasses from "../video/video.module.scss";
+import { Gallery } from "../gallery/Gallery";
 
 export default function ProjectsPage() {
   return (
@@ -86,6 +87,49 @@ export default function ProjectsPage() {
             <Video source="videos/hls/m2js.m3u8" hls={true} />
           </div>
         </FlexRow>
+
+        <Gallery
+          content={[
+            "gallery/m2js/1.png",
+            "gallery/m2js/2.png",
+            "gallery/m2js/3.png",
+            "gallery/m2js/4.png",
+            "gallery/m2js/5.png",
+            "gallery/m2js/6.png",
+            "gallery/m2js/7.png",
+            "gallery/m2js/8.png",
+            "gallery/m2js/9.png",
+            "gallery/m2js/10.png",
+            "gallery/m2js/11.png",
+            "gallery/m2js/12.png",
+            "gallery/m2js/13.gif",
+            "gallery/m2js/14.png",
+            "gallery/m2js/15.png",
+            "gallery/m2js/16.png",
+            "gallery/m2js/17.png",
+            "gallery/m2js/18.png",
+            "gallery/m2js/19.png",
+            "gallery/m2js/20.png",
+            "gallery/m2js/21.png",
+            "gallery/m2js/22.png",
+            "gallery/m2js/23.png",
+            "gallery/m2js/24.png",
+            "gallery/m2js/25.png",
+            "gallery/m2js/26.gif",
+            "gallery/m2js/27.gif",
+            "gallery/m2js/28.png",
+            "gallery/m2js/29.gif",
+            "gallery/m2js/30.gif",
+            "gallery/m2js/31.gif",
+            "gallery/m2js/32.gif",
+            "gallery/m2js/33.m3u8",
+            "gallery/m2js/34.m3u8",
+            "gallery/m2js/35.gif",
+            "gallery/m2js/36.png",
+            "gallery/m2js/37.m3u8",
+            "gallery/m2js/38.m3u8",
+          ]}
+        />
       </Section>
       <Section
         sector={1}

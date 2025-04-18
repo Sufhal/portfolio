@@ -1,4 +1,10 @@
-import { PropsWithoutRef, useEffect, useRef, useState } from "react";
+import {
+  CSSProperties,
+  PropsWithoutRef,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import scss from "./video.module.scss";
 import HLS from "hls.js";
 
@@ -8,7 +14,11 @@ export interface VideoProps {
 }
 
 export default function Video(props: PropsWithoutRef<VideoProps>) {
-  return props.hls ? <HlsVideo {...props} /> : <NativeVideo {...props} />;
+  return props.hls ? (
+    <HlsVideo {...props} containerClassName={scss.player} />
+  ) : (
+    <NativeVideo {...props} />
+  );
 }
 
 function NativeVideo(props: React.PropsWithoutRef<VideoProps>) {
@@ -21,7 +31,17 @@ function NativeVideo(props: React.PropsWithoutRef<VideoProps>) {
   );
 }
 
-function HlsVideo(props: React.PropsWithoutRef<VideoProps>) {
+export function HlsVideo(
+  props: React.PropsWithoutRef<
+    VideoProps & {
+      containerClassName?: string;
+      containerStyle?: CSSProperties;
+      playerClassName?: string;
+      playerStyle?: CSSProperties;
+      controls?: boolean;
+    }
+  >
+) {
   const ref = useRef<HTMLVideoElement>(null);
   useEffect(() => {
     const video = ref.current;
@@ -39,8 +59,16 @@ function HlsVideo(props: React.PropsWithoutRef<VideoProps>) {
     }
   }, [ref]);
   return (
-    <div className={scss.player}>
-      <video ref={ref} muted autoPlay loop></video>
+    <div className={props.containerClassName} style={props.containerStyle}>
+      <video
+        ref={ref}
+        muted
+        controls={props.controls}
+        loop
+        autoPlay
+        className={props.playerClassName}
+        style={props.playerStyle}
+      ></video>
     </div>
   );
 }
